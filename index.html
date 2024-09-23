@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/global.css">
+    <title>Music CD's</title>
+</head>
+<body>
+    <header>
+        <h1>Music CDs</h1>
+    </header>
+    <main>
+        <form>
+            <div>
+                <label for="author">Author</label>
+                <input id="author" name="author" type="text">
+            </div>
+            <div>
+                <label for="title">Title</label>
+                <input id="title" name="title" type="text">
+            </div>
+            <div>
+                <label for="year">Year</label>
+                <input id="year" name="year" type="text">
+            </div>
+            <button>Add</button>
+        </form>
+        <section>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Author</th>
+                        <th>Title</th>
+                        <th>Year</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="cdList">
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="scripts/script.js"></script>
+</body>
+</html>

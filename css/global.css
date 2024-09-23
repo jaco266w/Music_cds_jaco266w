@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    --main-color: blueviolet;
+    --text-display-color: aliceblue;
+    --content-width: 500px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: var(--main-color);
+    color: var(--text-display-color);
+    margin-bottom: 40px;
+    padding: 10px 0px 10px 20px;
+}
+
+form {
+    width: 100%;
+    max-width: var(--content-width);
+    margin-bottom: 20px;
+
+    div {
+        display: flex;
+        justify-content: space-between;
+    
+        padding-bottom: 10px;
+    
+        label{
+            margin-right: 5px;
+            width: 50px;
+        }
+
+        input{
+            width: 100%;
+        }
+    }
+
+    div:last-of-type input{
+        max-width: 40%;
+    }
+
+    button{
+        padding: 5px 10px 5px 10px;
+        font-size: 1.1rem;
+        cursor: pointer;
+    }
+}
+
+section{
+    width: 100%;
+    max-width: var(--content-width);
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border: 1px solid var(--main-color);
+    border-spacing: 2px 2px;
+
+    
+    td, th {
+        margin: 20px;
+    }
+
+    th {
+        border: 1px solid #ccc;
+        padding: 10px;
+        text-align: left;
+    }
+    
+    th {
+        background-color: var(--main-color);
+        color: var(--text-display-color);
+    }
+
+    button{
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+}
