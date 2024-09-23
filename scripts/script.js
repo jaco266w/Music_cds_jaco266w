@@ -1,3 +1,5 @@
+"use strict";
+
 document.querySelector('form').addEventListener('submit', function(event) {
     console.log("vi kører");
     event.preventDefault();
